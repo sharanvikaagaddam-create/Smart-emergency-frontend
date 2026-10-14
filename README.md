@@ -1,12 +1,16 @@
-﻿# Emergency Frontend
-This repo contains the frontend files extracted from the Spring Boot emergency system.
+# Emergency Frontend
 
-## Included files
-- `templates/` — Thymeleaf HTML pages
-- `static/` — CSS/JS/images if present
+This folder contains copies of the emergency system's HTML pages, separated from the
+Spring Boot project. The backend project remains in `../emergency-system/`.
 
-## Run locally
-Open the HTML files directly or serve them through a simple static web server if needed.
+## Files
 
-## Note
-This is a frontend-only repository; the Java backend remains in the Spring Boot project.
+The HTML files are in this folder. Their styles and scripts are currently embedded
+in the pages; there are no separate CSS, JavaScript, or image assets yet.
+
+## Important
+
+These pages still use Thymeleaf attributes and Spring form routes. They are separated
+as frontend source files, but they are not yet a standalone frontend application and
+must be rendered/served by the Spring Boot backend for forms and dynamic content to
+work.
